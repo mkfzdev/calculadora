@@ -19,6 +19,9 @@ elif operacao == '3':
     resultado = numero1 * numero2
 
 elif operacao == '4':
-    resultado = numero1 / numero2
+    if numero2 != 0:
+        resultado = numero1 / numero2
+    else:
+        resultado = "Não é possível divisão por zero."
 
 print('O resultado da operação é: ' + str(resultado))
